@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipos",
+  "info": {
+    "name": "Tipos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tipo": {
+      "type": "string",
+      "required": true
+    },
+    "imovel": {
+      "via": "tipo",
+      "model": "imoveis"
+    }
+  }
+}

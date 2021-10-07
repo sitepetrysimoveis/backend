@@ -39,10 +39,6 @@
     "Destaque": {
       "type": "boolean"
     },
-    "Cidade": {
-      "type": "string",
-      "required": true
-    },
     "Ambientes": {
       "type": "biginteger"
     },
@@ -58,28 +54,20 @@
     "Construcao": {
       "type": "biginteger"
     },
-    "Tipo": {
-      "type": "enumeration",
-      "enum": [
-        "Apartamento",
-        "Casa",
-        "Sobrado",
-        "Cobertura",
-        "Area",
-        "Terreno",
-        "Chale",
-        "JK",
-        "Loja",
-        "Sala"
-      ],
-      "required": true
-    },
     "Area": {
       "type": "string"
     },
     "slug": {
       "type": "uid",
       "targetField": "Titulo"
+    },
+    "cidade": {
+      "model": "cidades",
+      "via": "imovel"
+    },
+    "tipo": {
+      "model": "tipos",
+      "via": "imovel"
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cidades",
+  "info": {
+    "name": "Cidades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Cidade": {
+      "type": "string",
+      "required": true
+    },
+    "imovel": {
+      "via": "cidade",
+      "model": "imoveis"
+    }
+  }
+}
