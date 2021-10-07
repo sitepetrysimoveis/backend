@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "contatos",
+  "info": {
+    "name": "Contatos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Telefone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Endereco": {
+      "type": "string"
+    }
+  }
+}

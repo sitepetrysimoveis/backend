@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contatos",
+      "handler": "contatos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contatos",
+      "handler": "contatos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contatos",
+      "handler": "contatos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
