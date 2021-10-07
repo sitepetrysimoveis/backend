@@ -63,11 +63,11 @@
     },
     "cidade": {
       "model": "cidades",
-      "via": "imovel"
+      "via": "imoveis"
     },
     "tipo": {
       "model": "tipos",
-      "via": "imovel"
+      "via": "imoveis"
     }
   }
 }

@@ -15,9 +15,9 @@
       "type": "string",
       "required": true
     },
-    "imovel": {
+    "imoveis": {
       "via": "cidade",
-      "model": "imoveis"
+      "collection": "imoveis"
     }
   }
 }
