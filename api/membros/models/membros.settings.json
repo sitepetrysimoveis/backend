@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "membros",
+  "info": {
+    "name": "Membros"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Nome": {
+      "type": "string",
+      "required": true
+    },
+    "Cargo": {
+      "type": "string",
+      "required": true
+    },
+    "Telefone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

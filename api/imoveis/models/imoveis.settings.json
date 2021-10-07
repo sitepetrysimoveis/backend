@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "imoveis",
+  "info": {
+    "name": "Imoveis",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Descricao": {
+      "type": "richtext",
+      "required": true
+    },
+    "Valor": {
+      "type": "decimal",
+      "required": true
+    },
+    "Imagens": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Destaque": {
+      "type": "boolean"
+    },
+    "Cidade": {
+      "type": "string",
+      "required": true
+    },
+    "Ambientes": {
+      "type": "biginteger"
+    },
+    "Garagens": {
+      "type": "biginteger"
+    },
+    "Quartos": {
+      "type": "biginteger"
+    },
+    "Banheiros": {
+      "type": "biginteger"
+    },
+    "Construcao": {
+      "type": "biginteger"
+    },
+    "Tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Apartamento",
+        "Casa",
+        "Sobrado",
+        "Cobertura",
+        "Area",
+        "Terreno",
+        "Chale",
+        "JK",
+        "Loja",
+        "Sala"
+      ],
+      "required": true
+    },
+    "Area": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titulo"
+    }
+  }
+}

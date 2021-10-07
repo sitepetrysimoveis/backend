@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/imoveis",
+      "handler": "imoveis.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imoveis/count",
+      "handler": "imoveis.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imoveis/:slug",
+      "handler": "imoveis.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/imoveis",
+      "handler": "imoveis.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/imoveis/:id",
+      "handler": "imoveis.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/imoveis/:id",
+      "handler": "imoveis.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
