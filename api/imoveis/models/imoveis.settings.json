@@ -68,6 +68,10 @@
     "tipo": {
       "model": "tipos",
       "via": "imoveis"
+    },
+    "Resumo": {
+      "type": "string",
+      "maxLength": 120
     }
   }
 }
